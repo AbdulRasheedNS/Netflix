@@ -32,15 +32,15 @@ function Banner() {
       autoplay: 1,
     },
   };
-
+  
   return (
     <div style={{ backgroundImage: `url(${movie ? imageUrl + movie.backdrop_path : ""})` }}
       className='banner' >
-
-      <div className='video'>
-        {/* {urlId ? 
-        <iframe src={<Youtube opts={opts} videoId={urlId.key} /> } frameborder="0" title='a'></iframe> : ''} */}
-        {urlId && <Youtube opts={opts} videoId={urlId.key} />}
+        
+      <div className='video' id='youtube-video'>
+        {urlId && <div><div class="closeBtn" data-target="#youtube-video"><img src="https://icon-library.com/images/svg-close-icon/svg-close-icon-13.jpg" width="30" height="30"
+         /></div>
+        <Youtube opts={opts} videoId={urlId.key} /></div>}
       </div>
       <div className='content'>
         <h1 className='title'>{movie ? movie.title : ""}</h1>
@@ -55,4 +55,4 @@ function Banner() {
   )
 }
 
-export default Banner
+export default Banner;
