@@ -51,15 +51,15 @@
     background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);
 }
 .video{
-    padding-top: 3.5rem;
+    padding-top: 12.5rem;
     float: right;
-    width: 50rem;
+    width: 33.5rem;
 }
 .closeBtn {
     position: absolute;
     cursor: pointer;
-    top: 65px;
-    right: 5px;
+    top: 12.5rem;
+    right: 0;
     z-index: 999999;
     background-color: #ffffff;
     border-radius: 0.2rem;
