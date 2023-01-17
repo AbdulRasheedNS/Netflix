@@ -29,11 +29,13 @@
     background-color: rgba(51, 51, 51, .5);
     cursor: pointer;
     margin-right: 1rem;
+    transition: all 0.5s ease-in-out;
 }
 
 .button:hover{
     color: black;
     background-color: #e6e6e6;
+    transition: 0.5s;
 }
 
 .description{
